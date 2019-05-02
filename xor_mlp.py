@@ -297,7 +297,7 @@ if __name__ == "__main__":
     # run a script to test best model on average
     print("\nCalculating the best model in terms of average MSE...\n")
     print("Neurons \t Data size \t Batch mode \t MSE")
-    iters = 10
+    iters = 50
     times = []
     for batchFlag in [True,False]:
         start = time.time()
@@ -309,7 +309,7 @@ if __name__ == "__main__":
                 mse = mse / iters
                 print("%i \t\t %i \t\t %s \t\t %.6f" % (neuron_nums[i], data_sizes[j], batchFlag, mse))
         end = time.time()
-        times.append((end-start)/iters
+        times.append((end-start)/iters)
 
     print("\nTime to exectute:\n\tBatch = %.6f\tOnline = %.6f" % (times[0],times[1]))
     print("\nEND OF SCRIPT\n")
