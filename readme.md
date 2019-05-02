@@ -57,4 +57,5 @@ python xor_mlp.py
 
 ## Help and Acknowledgements
 For help contact: M.Topolewski@warwick.ac.uk
+
 Implementation based on: [https://github.com/miloharper/multi-layer-neural-network](https://github.com/miloharper/multi-layer-neural-network)
